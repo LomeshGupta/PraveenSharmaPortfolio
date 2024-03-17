@@ -7,7 +7,7 @@
 }
 
 .Title {
-  font-size: 5vw; /* Responsive font size based on viewport width */
+  font-size: 10vw;
   font-family: "Arsenica Trial";
   text-shadow: 1px 1px 2px rgb(255, 255, 255);
   font-weight: 100;
@@ -27,9 +27,9 @@
 }
 
 .Image {
-  width: 90%; /* Responsive image width */
-  max-width: 550px; /* Limit maximum width of the image */
-  height: auto; /* Maintain aspect ratio */
+  width: 90%;
+  max-width: 550px; 
+  height: auto; 
   animation: fadeIn 1.4s ease-in-out;
 } 
 
@@ -50,7 +50,7 @@ h3 {
 
 @media (max-width: 768px) {
   .Title {
-    font-size: 8vw; /* Adjust font size for smaller screens */
+    font-size: 12vw; /* Adjust font size for smaller screens */
     margin-top: 20%;
   }
 
