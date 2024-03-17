@@ -61,7 +61,6 @@
   @media (max-width: 768px) {
     .Title {
       font-size: 11vw;
-      margin-top: 30vW;
     }
 
     .Image {
@@ -77,13 +76,6 @@
     }
   }
 
-  @media (max-width: 600px) {
-    .Title {
-      font-size: 11vw;
-      margin-top: 50%;
-    }
-  }
-
   @keyframes slideIn {
     from {
       transform: translateX(200px);
@@ -91,5 +83,12 @@
     to {
       transform: translateX(0);
     }
+  }
+}
+@media (max-width: 768px) {
+  .Section1{
+    padding: 5%;
+    padding-top: 60px;
+
   }
 }
