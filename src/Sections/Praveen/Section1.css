@@ -35,19 +35,22 @@
     left: 30%;
     top: -150px;
     position: fixed;
-    animation: slideInx 0.3s ease-in-out;
+    /* animation: slideInx 0.3s ease-in-out; */
+    animation: fadeIn 1.4s ease-in-out;
   }
 
   h2 {
     font-family: "TT Commons";
     font-size: 250%;
     margin: 0;
+    animation: fadeIn 1.4s ease-in-out;
   }
 
   h3 {
     font-family: "TT Commons";
     font-size: 150%;
     margin: 10px;
+    animation: fadeIn 1.4s ease-in-out;
   }
   @media (max-width: 868px) {
     .Title {
