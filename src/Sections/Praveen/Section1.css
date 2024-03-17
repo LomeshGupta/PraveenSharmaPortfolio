@@ -4,65 +4,85 @@
 .Section1 {
   text-align: center;
   padding: 1%;
-}
-
-.Title {
-  font-size: 10vw;
-  font-family: "Arsenica Trial";
-  text-shadow: 1px 1px 2px rgb(255, 255, 255);
-  font-weight: 100;
-  animation: fadeIn 1s ease-in-out;
-  margin-bottom: 0;
-}
-
-.ImageContainer {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.Title:hover {
-  transition: transform 0.3s ease-in-out;
-  transform: scale(1.03);
-}
-
-.Image {
-  width: 90%;
-  max-width: 550px; 
-  height: auto; 
-  animation: fadeIn 1.4s ease-in-out;
-} 
-
-h2, h3 {
-  font-family: "TT Commons";
-  animation: fadeIn 1.4s ease-in-out;
-}
-
-h2 {
-  font-size: 4vw; /* Responsive font size based on viewport width */
-  margin: 0;
-}
-
-h3 {
-  font-size: 3vw; /* Responsive font size based on viewport width */
-  margin: 10px;
-}
-
-@media (max-width: 768px) {
   .Title {
-    font-size: 12vw; /* Adjust font size for smaller screens */
-    margin-top: 20%;
+    font-size: 10vw;
+    font-family: "Arsenica Trial";
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 0;
+  }
+
+  .ImageContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    transform: rotate(-3deg);
+  }
+
+  .Title:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.03);
   }
 
   .Image {
     width: 90%;
+    max-width: 600px;
+    height: auto;
+    animation: SlideIn 1.4s ease-in-out;
+  }
+
+  .Image:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.03);
+  }
+
+  h2,
+  h3 {
+    font-family: "TT Commons";
+    animation: fadeIn 1.4s ease-in-out;
+  }
+
+  h2:hover,
+  h3:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.03);
   }
 
   h2 {
-    font-size: 6vw; /* Adjust font size for smaller screens */
+    font-size: 4vw; /* Responsive font size based on viewport width */
+    margin: 0;
   }
 
   h3 {
-    font-size: 4vw; /* Adjust font size for smaller screens */
+    font-size: 3vw;
+    margin: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .Title {
+      font-size: 11vw;
+      margin-top: 30%;
+    }
+
+    .Image {
+      width: 70%;
+    }
+
+    h2 {
+      font-size: 6vw;
+    }
+
+    h3 {
+      font-size: 4vw;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(200px);
+    }
+    to {
+      transform: translateX(0);
+    }
   }
 }
