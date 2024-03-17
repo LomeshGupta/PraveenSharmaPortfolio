@@ -3,8 +3,9 @@
 
 .Section1 {
   text-align: center;
-  padding: 1%;
-  
+  padding: 2%;
+  padding-bottom: 5%;
+
   .Title {
     font-size: 10vw;
     font-family: "Arsenica Trial";
