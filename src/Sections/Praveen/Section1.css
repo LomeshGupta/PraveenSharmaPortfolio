@@ -3,123 +3,66 @@
 
 .Section1 {
   text-align: center;
-  justify-content: center;
-  align-items: center;
   padding: 1%;
+}
 
+.Title {
+  font-size: 5vw; /* Responsive font size based on viewport width */
+  font-family: "Arsenica Trial";
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  font-weight: 100;
+  animation: fadeIn 1s ease-in-out;
+  margin-bottom: 0;
+}
+
+.ImageContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.Title:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.03);
+}
+
+.Image {
+  width: 90%; /* Responsive image width */
+  max-width: 550px; /* Limit maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  animation: fadeIn 1.4s ease-in-out;
+} 
+
+h2, h3 {
+  font-family: "TT Commons";
+  animation: fadeIn 1.4s ease-in-out;
+}
+
+h2 {
+  font-size: 4vw; /* Responsive font size based on viewport width */
+  margin: 0;
+}
+
+h3 {
+  font-size: 3vw; /* Responsive font size based on viewport width */
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
   .Title {
-    font-size:130px;
-    font-family: "Arsenica Trial";
-    z-index: 999;
-    text-shadow: 1px 1px 2px rgb(255, 255, 255);
-    font-weight: 100;
-    animation: fadeIn 1s ease-in-out;
-    margin-bottom: 0;
-  }
-
-  .ImageContainer {
-    display: flex;
-    z-index: -1;
-    justify-content: flex-start;
-    transform: rotate(-5deg);
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
-  .Title:hover {
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.03);
+    font-size: 8vw; /* Adjust font size for smaller screens */
+    margin-top: 20%;
   }
 
   .Image {
-    width: 550px;
-    /* position: fixed; */
-    /* animation: slideInx 0.3s ease-in-out; */
-    animation: fadeIn 1.4s ease-in-out;
-  } 
+    width: 90%;
+  }
 
   h2 {
-    font-family: "TT Commons";
-    font-size: 40px;
-    margin: 0;
-    animation: fadeIn 1.4s ease-in-out;
+    font-size: 6vw; /* Adjust font size for smaller screens */
   }
 
   h3 {
-    font-family: "TT Commons";
-    font-size: 25px;
-    margin: 10px;
-    animation: fadeIn 1.4s ease-in-out;
-  }
-  @media (max-width: 868px) {
-    .Title {
-      margin-top: 36%;
-      font-size: 55px;
-    }
-    .Image {
-      width: 65%;
-    }
-
-    h2 {
-      font-size: 25px;
-    }
-
-    h3 {
-      font-size: 20px;
-    }
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes zoomin {
-  from {
-    font-size: 200%;
-  }
-  to {
-    font-size: 250%;
-  }
-}
-
-@keyframes slideInx {
-  from {
-    left: 500%;
-  }
-  to {
-    left: 16%;
-  }
-}
-
-@keyframes slideInx {
-  from {
-    transform: translateX(-200px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideDown {
-  from {
-    transform: translateY(-50px);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes Sizein {
-  from {
-    font-size: 100%;
-  }
-  to {
-    font-size: 200%;
+    font-size: 4vw; /* Adjust font size for smaller screens */
   }
 }
