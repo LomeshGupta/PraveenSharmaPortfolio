@@ -1,0 +1,126 @@
+@import url("https://fonts.cdnfonts.com/css/arsenica-trial");
+@import url("https://fonts.cdnfonts.com/css/tt-commons");
+
+.Section1 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+
+  .Title {
+    font-size: 900%;
+    font-family: "Arsenica Trial";
+    z-index: 999;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    font-weight: 100;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .ImageContainer {
+    display: flex;
+    z-index: -1;
+    justify-content: flex-start;
+    transform: rotate(-5deg);
+    width: 100%;
+    margin-bottom: 25%;
+    position: relative;
+  }
+  .Title:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.03);
+  }
+
+  .Image {
+    width: 40%;
+    left: 30%;
+    top: -150px;
+    position: fixed;
+    animation: slideInx 0.3s ease-in-out;
+  }
+
+  h2 {
+    font-family: "TT Commons";
+    font-size: 250%;
+    margin: 0;
+  }
+
+  h3 {
+    font-family: "TT Commons";
+    font-size: 150%;
+    margin: 10px;
+  }
+  @media (max-width: 868px) {
+    .Title {
+      margin-top: 30%;
+      font-size: 300%;
+    }
+    .Image {
+      width: 65%;
+      top: -50px;
+      left: 16%;
+    }
+    .ImageContainer {
+      margin-bottom: 46%;
+    }
+    h2 {
+      font-size: 150%;
+    }
+
+    h3 {
+      font-size: 100%;
+    }
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomin {
+  from {
+    font-size: 200%;
+  }
+  to {
+    font-size: 250%;
+  }
+}
+
+@keyframes slideInx {
+  from {
+    left: 500%;
+  }
+  to {
+    left: 16%;
+  }
+}
+
+@keyframes slideInx {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes Sizein {
+  from {
+    font-size: 100%;
+  }
+  to {
+    font-size: 200%;
+  }
+}
