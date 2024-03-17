@@ -62,9 +62,13 @@
     .Title {
       font-size: 11vw;
     }
+    .ImageContainer{
+      padding-left: 2%;
+      padding-right: 2%;
+    }
 
     .Image {
-      width: 70%;
+      width: 60vw;
     }
 
     h2 {
