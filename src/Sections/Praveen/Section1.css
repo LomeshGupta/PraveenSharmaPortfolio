@@ -8,7 +8,7 @@
   padding: 1%;
 
   .Title {
-    font-size: 900%;
+    font-size:130px;
     font-family: "Arsenica Trial";
     z-index: 999;
     text-shadow: 1px 1px 2px rgb(255, 255, 255);
@@ -31,9 +31,9 @@
   }
 
   .Image {
-    width: 40%;
+    width: 550px;
     left: 30%;
-    top: -150px;
+    top: -130px;
     position: fixed;
     /* animation: slideInx 0.3s ease-in-out; */
     animation: fadeIn 1.4s ease-in-out;
@@ -41,21 +41,21 @@
 
   h2 {
     font-family: "TT Commons";
-    font-size: 250%;
+    font-size: 40px;
     margin: 0;
     animation: fadeIn 1.4s ease-in-out;
   }
 
   h3 {
     font-family: "TT Commons";
-    font-size: 150%;
+    font-size: 25px;
     margin: 10px;
     animation: fadeIn 1.4s ease-in-out;
   }
   @media (max-width: 868px) {
     .Title {
       margin-top: 30%;
-      font-size: 300%;
+      font-size: 55px;
     }
     .Image {
       width: 65%;
@@ -63,7 +63,7 @@
       left: 16%;
     }
     .ImageContainer {
-      margin-bottom: 52%;
+      margin-bottom: 190px;
     }
     h2 {
       font-size: 150%;
