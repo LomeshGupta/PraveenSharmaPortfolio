@@ -37,7 +37,7 @@
     position: fixed;
     /* animation: slideInx 0.3s ease-in-out; */
     animation: fadeIn 1.4s ease-in-out;
-  }
+  } 
 
   h2 {
     font-family: "TT Commons";
@@ -63,7 +63,7 @@
       left: 16%;
     }
     .ImageContainer {
-      margin-bottom: 46%;
+      margin-bottom: 50%;
     }
     h2 {
       font-size: 150%;
